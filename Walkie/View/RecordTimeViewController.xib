@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecordTimeViewController" customModule="Walkie" customModuleProvider="target">
+            <connections>
+                <outlet property="startStopButton" destination="Yfc-F7-KHV" id="ddC-Fz-Zf4"/>
+                <outlet property="timeLabel" destination="UoD-Xl-IY1" id="4Sb-lF-gfB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" image="firstLine" translatesAutoresizingMaskIntoConstraints="NO" id="Sza-lR-jVn">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="131"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UoD-Xl-IY1">
+                    <rect key="frame" x="151.66666666666666" y="412" width="89.666666666666657" height="27"/>
+                    <attributedString key="attributedText">
+                        <fragment content="00:00:00">
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="23" name="SFProText-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfc-F7-KHV">
+                    <rect key="frame" x="166" y="660" width="61" height="76"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="61" id="5vm-d7-OIV"/>
+                        <constraint firstAttribute="height" constant="76" id="Y9l-bv-1It"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" image="startButton">
+                        <attributedString key="attributedTitle"/>
+                        <color key="baseBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="startStopButtonAction:" destination="-1" eventType="touchUpInside" id="cpR-fI-kMS"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6b-X8-Pws">
+                    <rect key="frame" x="145.66666666666666" y="363" width="102" height="29.666666666666686"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Duration:">
+                            <attributes>
+                                <font key="NSFont" size="25" name="SFProText-Semibold"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="UoD-Xl-IY1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9Cp-ez-4hc"/>
+                <constraint firstAttribute="trailing" secondItem="Sza-lR-jVn" secondAttribute="trailing" id="FIC-Dx-MN3"/>
+                <constraint firstItem="Yfc-F7-KHV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="166" id="IBs-D7-GaV"/>
+                <constraint firstItem="h6b-X8-Pws" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JgD-OI-3MJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Yfc-F7-KHV" secondAttribute="bottom" constant="82" id="VYa-eG-67T"/>
+                <constraint firstItem="h6b-X8-Pws" firstAttribute="top" secondItem="Sza-lR-jVn" secondAttribute="bottom" constant="232" id="X93-BR-2YO"/>
+                <constraint firstItem="UoD-Xl-IY1" firstAttribute="top" secondItem="h6b-X8-Pws" secondAttribute="bottom" constant="19.329999999999998" id="dub-Ic-SP9"/>
+                <constraint firstItem="Sza-lR-jVn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fjH-D6-aeb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Yfc-F7-KHV" secondAttribute="trailing" constant="166" id="fy7-yP-AjP"/>
+                <constraint firstItem="Sza-lR-jVn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gpF-0h-UUo"/>
+            </constraints>
+            <point key="canvasLocation" x="139.69465648854961" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="firstLine" width="390" height="131"/>
+        <image name="startButton" width="61" height="76"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

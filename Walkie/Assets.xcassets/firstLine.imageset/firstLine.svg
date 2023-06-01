@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="390px" height="131px" viewBox="0 0 390 131" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Line</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Boarding-Page" fill="#A6B1E1">
+            <path d="M-35.0316805,149.024509 C-35.9333171,142.667884 -28.1698703,137.671543 -11.7413401,134.035487 C12.9014551,128.581404 94.8947684,77.6625908 201,96.9015193 C307.105232,116.140448 357.003277,96.8570648 390,91.7169066 C411.997815,88.2901345 419.222831,55.6940304 411.675047,-6.07140564 L-35.0316805,-32.2137475 L-35.0316805,149.024509 Z" id="Line"></path>
+        </g>
+    </g>
+</svg>

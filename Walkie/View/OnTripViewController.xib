@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnTripViewController" customModule="Walkie" customModuleProvider="target">
+            <connections>
+                <outlet property="textDistance" destination="ego-N6-CiE" id="6LV-Fd-o2z"/>
+                <outlet property="textDuration" destination="L7Z-JV-SG2" id="0hT-Cm-7Ia"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="267"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mrn-6G-LJJ">
+                    <rect key="frame" x="15" y="40" width="105" height="30"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Distance:">
+                            <attributes>
+                                <font key="NSFont" size="25" name="SFProText-Regular"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DR2-W0-zPK">
+                    <rect key="frame" x="16" y="110" width="102" height="30"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Duration:">
+                            <attributes>
+                                <font key="NSFont" size="25" name="SFProText-Regular"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ego-N6-CiE">
+                    <rect key="frame" x="237" y="40" width="56" height="30"/>
+                    <attributedString key="attributedText">
+                        <fragment content="2 km">
+                            <attributes>
+                                <font key="NSFont" size="25" name="SFProText-Medium"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7Z-JV-SG2">
+                    <rect key="frame" x="237" y="110" width="124" height="30"/>
+                    <attributedString key="attributedText">
+                        <fragment content="30 minutes">
+                            <attributes>
+                                <font key="NSFont" size="25" name="SFProText-Medium"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01Q-hm-Hyx">
+                    <rect key="frame" x="82" y="180" width="226" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="226" id="54a-wp-pfc"/>
+                        <constraint firstAttribute="height" constant="53" id="ZTB-Zw-RNz"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Finish">
+                        <color key="baseBackgroundColor" red="0.25882352939999997" green="0.28235294119999998" blue="0.4549019608" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="finishPressed:" destination="-1" eventType="touchUpInside" id="LcO-Up-zSU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.65098039215686276" green="0.69411764705882351" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="01Q-hm-Hyx" secondAttribute="trailing" constant="82" id="DhW-t7-IrB"/>
+                <constraint firstItem="DR2-W0-zPK" firstAttribute="top" secondItem="Mrn-6G-LJJ" secondAttribute="bottom" constant="40" id="EUM-4K-a0h"/>
+                <constraint firstItem="L7Z-JV-SG2" firstAttribute="top" secondItem="ego-N6-CiE" secondAttribute="bottom" constant="40" id="JqS-5x-2hC"/>
+                <constraint firstItem="01Q-hm-Hyx" firstAttribute="top" secondItem="DR2-W0-zPK" secondAttribute="bottom" constant="40" id="KLX-6U-4WX"/>
+                <constraint firstItem="01Q-hm-Hyx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="OgW-Yc-BMq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ego-N6-CiE" secondAttribute="trailing" constant="97" id="Ohx-DE-Jgo"/>
+                <constraint firstItem="ego-N6-CiE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="TfM-bY-YWY"/>
+                <constraint firstItem="DR2-W0-zPK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Yym-hl-cNm"/>
+                <constraint firstItem="Mrn-6G-LJJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="Yza-cS-tJB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="L7Z-JV-SG2" secondAttribute="trailing" constant="29" id="fKB-eT-YAB"/>
+                <constraint firstItem="01Q-hm-Hyx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="82" id="ftZ-Xz-SO8"/>
+                <constraint firstItem="01Q-hm-Hyx" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="gEO-Cd-lQR"/>
+                <constraint firstItem="Mrn-6G-LJJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="x6D-Ty-wvc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-171.75572519083968" y="-348.94366197183098"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnBoardingViewController" customModule="Walkie" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firstLine" translatesAutoresizingMaskIntoConstraints="NO" id="O1d-6h-734">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="131"/>
+                </imageView>
+                <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oSR-zE-u3z">
+                    <rect key="frame" x="110" y="705.33333333333337" width="173" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="173" id="M9M-tS-Qe3"/>
+                        <constraint firstAttribute="height" constant="53" id="mve-b2-5af"/>
+                    </constraints>
+                    <buttonConfiguration key="configuration" style="filled">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Start">
+                                <attributes>
+                                    <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="20" name="SFProText-Semibold"/>
+                                    <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <color key="baseBackgroundColor" red="0.19738520409999999" green="0.28235294119999998" blue="0.4549019608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="buttonStartAction:" destination="-1" eventType="touchUpInside" id="Pdr-kc-poq"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="ql1-Xo-Fru">
+                    <rect key="frame" x="32.666666666666657" y="188.99999999999997" width="328" height="474.33333333333326"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="l9d-Xo-PqR">
+                            <rect key="frame" x="0.0" y="0.0" width="328" height="361.33333333333331"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PEC-eX-ZAb">
+                                    <rect key="frame" x="0.0" y="0.0" width="328" height="65.333333333333329"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Walkie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5O-6c-4al">
+                                            <rect key="frame" x="121" y="0.0" width="86" height="36"/>
+                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
+                                            <color key="textColor" red="0.32941176470588235" green="0.34901960784313724" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your bridge to closer to your dog" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7m-Yu-69d">
+                                            <rect key="frame" x="45" y="46" width="238" height="19.333333333333329"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.32941176470588235" green="0.34901960784313724" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onBoardingPictureTwo" translatesAutoresizingMaskIntoConstraints="NO" id="dft-9S-i1r">
+                                    <rect key="frame" x="0.0" y="115.33333333333331" width="328" height="246"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="328" id="ZIi-gb-5bX"/>
+                                        <constraint firstAttribute="height" constant="246" id="tqD-OI-I6V"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uch-Sd-kKm">
+                            <rect key="frame" x="38.666666666666671" y="401.33333333333337" width="250.66666666666663" height="73"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKn-hv-U7A">
+                                    <rect key="frame" x="0.0" y="0.0" width="250.66666666666666" height="21"/>
+                                    <attributedString key="attributedText">
+                                        <fragment content="The App that will remind you to">
+                                            <attributes>
+                                                <color key="NSColor" red="0.25882352941176467" green="0.28235294117647058" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="SFProText-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iP-mG-Spv">
+                                    <rect key="frame" x="63.333333333333329" y="26" width="123.99999999999999" height="21"/>
+                                    <attributedString key="attributedText">
+                                        <fragment content="Walk and Enjoy">
+                                            <attributes>
+                                                <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" red="0.25882352941176467" green="0.28235294117647058" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="SFProRounded-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOt-Yi-XHW">
+                                    <rect key="frame" x="29.666666666666671" y="52" width="191" height="21"/>
+                                    <attributedString key="attributedText">
+                                        <fragment content="Your time with your dog">
+                                            <attributes>
+                                                <color key="NSColor" red="0.25882352941176467" green="0.28235294117647058" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="SFProText-Medium"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ql1-Xo-Fru" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6LB-Yb-FX8"/>
+                <constraint firstItem="O1d-6h-734" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6Xq-8n-UiK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="oSR-zE-u3z" secondAttribute="bottom" constant="59.670000000000002" id="DpR-Xl-jNM"/>
+                <constraint firstItem="O1d-6h-734" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VZd-8k-HlD"/>
+                <constraint firstItem="ql1-Xo-Fru" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Y64-zj-gJt"/>
+                <constraint firstItem="oSR-zE-u3z" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Z1y-vx-ZL3"/>
+                <constraint firstItem="O1d-6h-734" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="uTh-v2-2E1"/>
+                <constraint firstAttribute="trailing" secondItem="O1d-6h-734" secondAttribute="trailing" id="vY2-2H-mEs"/>
+            </constraints>
+            <point key="canvasLocation" x="112.21374045801527" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="firstLine" width="390" height="131"/>
+        <image name="onBoardingPictureTwo" width="741.8460693359375" height="522.41796875"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

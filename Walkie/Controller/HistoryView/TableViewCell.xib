@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="Walkie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" customClass="TableViewCell" customModule="Walkie" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="85"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconHistoryy" translatesAutoresizingMaskIntoConstraints="NO" id="CRb-YR-x7e">
+                        <rect key="frame" x="10" y="17" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="3cG-It-rTo"/>
+                            <constraint firstAttribute="width" constant="50" id="C8u-Lf-4QA"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9C-O9-cdP">
+                        <rect key="frame" x="70" y="21" width="84" height="19"/>
+                        <attributedString key="attributedText">
+                            <fragment content="9 May 2023">
+                                <attributes>
+                                    <font key="NSFont" size="16" name="SFProText-Bold"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6c-dD-gcO">
+                        <rect key="frame" x="70" y="45" width="36" height="17"/>
+                        <attributedString key="attributedText">
+                            <fragment content="12.10">
+                                <attributes>
+                                    <font key="NSFont" size="14" name="SFProText-Regular"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tuz-7r-BE2">
+                        <rect key="frame" x="327" y="33" width="33" height="19"/>
+                        <attributedString key="attributedText">
+                            <fragment content="30 S">
+                                <attributes>
+                                    <font key="NSFont" size="16" name="SFProText-Medium"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="U6c-dD-gcO" firstAttribute="top" secondItem="e9C-O9-cdP" secondAttribute="bottom" constant="5" id="0uk-fz-9JU"/>
+                    <constraint firstItem="Tuz-7r-BE2" firstAttribute="leading" secondItem="e9C-O9-cdP" secondAttribute="trailing" constant="173" id="77C-Wj-hWy"/>
+                    <constraint firstAttribute="trailing" secondItem="Tuz-7r-BE2" secondAttribute="trailing" constant="30" id="Pua-Nu-3dn"/>
+                    <constraint firstItem="e9C-O9-cdP" firstAttribute="leading" secondItem="CRb-YR-x7e" secondAttribute="trailing" constant="10" id="Q4o-tB-JLa"/>
+                    <constraint firstItem="Tuz-7r-BE2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="33" id="RjA-jf-ovc"/>
+                    <constraint firstItem="Tuz-7r-BE2" firstAttribute="leading" secondItem="U6c-dD-gcO" secondAttribute="trailing" constant="221" id="VqG-Ps-CIy"/>
+                    <constraint firstItem="U6c-dD-gcO" firstAttribute="leading" secondItem="CRb-YR-x7e" secondAttribute="trailing" constant="10" id="eJR-6L-X93"/>
+                    <constraint firstItem="e9C-O9-cdP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="21" id="gzX-he-95v"/>
+                    <constraint firstItem="CRb-YR-x7e" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="l6J-F8-nYD"/>
+                    <constraint firstItem="CRb-YR-x7e" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="y6z-s1-h8X"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imagePet" destination="CRb-YR-x7e" id="RtK-ce-meZ"/>
+                <outlet property="textDate" destination="e9C-O9-cdP" id="9Mu-Gw-yKj"/>
+                <outlet property="textTime" destination="U6c-dD-gcO" id="jaw-ut-vkb"/>
+                <outlet property="textTimeStopWatch" destination="Tuz-7r-BE2" id="0jr-aG-xnv"/>
+            </connections>
+            <point key="canvasLocation" x="19" y="21"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconHistoryy" width="53" height="53"/>
+    </resources>
+</document>
