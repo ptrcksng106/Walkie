@@ -18,6 +18,7 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         tableView.register(nib, forCellReuseIdentifier: "TableViewCell")
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.rowHeight = 85
         
 //        do {
 //            entries = try context.fetch(fetchRequest)
@@ -28,29 +29,21 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
         
-//        let entry = entries[indexPath.row]
-//        
-//        let carName = entry.value(forKey: "carName") as? String
-//        let date = entry.value(forKey: "tripDate") as? Date
-//        let stringDate = getStringDate(date: date!)
-//        let distanceTravelled = entry.value(forKey: "distanceTravelled") as? Double ?? 0.0
-//        let fuelUsed = entry.value(forKey: "fuelUsed") as? Double ?? 0.0
-//                
-//        cell.carNameLabel.text = carName
-//        cell.dateLabel.text = stringDate
-//        cell.distanceTravelledLabel.text = "\(distanceTravelled) Km"
-//        cell.fuelUsedLabel.text = "\(fuelUsed) Liter"
-        
-        cell.textDate.text = "12345689"
-        cell.textTime.text = "123"
+        cell.textDate.text = "textDatee"
+        cell.textTime.text = "textTime ini loh"
         cell.textTimeStopWatch.text = "cobaa"
         cell.imagePet.image = UIImage(named: "iconHistoryy")
         

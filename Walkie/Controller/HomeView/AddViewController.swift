@@ -18,9 +18,6 @@ class AddViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         textTitle.delegate = self
         
-        
-        
-        
     }
     
     

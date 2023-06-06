@@ -11,9 +11,9 @@ class TableViewCell: UITableViewCell {
     
     
     @IBOutlet weak var imagePet: UIImageView!
-    @IBOutlet weak var textTimeStopWatch: UILabel!
-    @IBOutlet weak var textTime: UILabel!
-    @IBOutlet weak var textDate: UILabel!
+    @IBOutlet  var textTimeStopWatch: UILabel!
+    @IBOutlet  var textTime: UILabel!
+    @IBOutlet  var textDate: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
